@@ -17,10 +17,12 @@ Tandem is a decentralized tactical logistics and supply forecasting platform bui
 
 ## Tech Stack
 
-- **Frontend & GIS:** React 19, TypeScript, Vite, Tailwind CSS v4, Leaflet, Recharts, Lucide Icons
-- **Federated Edge Learning:** Clustered FL, Adaptive Renyi DP-SGD, SecAgg+ zero-knowledge masking, Top-k sparsification, Byzantine filtering
-- **Telemetry & Standards:** NASA SRTM 30m DEM elevation profiles, DRDO DFRL nutrition baselines, sub-zero fuel burn curves
-- **Routing:** Geodesic mountain corridor optimization with winding factor calibration and heavy-lift logistics drone corridors
+- **Frontend & UI:** React 19, TypeScript, Vite, Tailwind CSS v4, Lucide Icons
+- **Tactical GIS & Mapping:** Leaflet, React-Leaflet, NASA SRTM 30m DEM elevation profiles
+- **Analytics & Charting:** Recharts, sub-zero fuel burn curves, DRDO DFRL nutrition models
+- **Federated Learning:** Clustered FL, Adaptive Renyi DP-SGD, SecAgg+, Top-k sparsification, Byzantine filtering
+- **Corridor Routing:** Geodesic mountain pathfinding, winding factor calibration, UAV aerial lanes
+- **Edge Security & Protocols:** EMCON radio silence mode, local SQLite buffering, zero-cloud architecture
 
 ## Key Features
 
@@ -42,21 +44,6 @@ npm run dev
 ```
 
 Open `http://localhost:5173/` in your browser.
-
-## Deployment
-
-Tandem deploys directly to Vercel with zero external API keys:
-
-1. Import the repository in Vercel.
-2. Set the Root Directory to `tactical-ops-web`.
-3. Framework preset detects Vite automatically.
-4. Click Deploy.
-
-## Author
-
-- **Ankit Gupta**
-- **GitHub:** [@ankitgpt18](https://github.com/ankitgpt18)
-- **Email:** ankitgupta18k@gmail.com
 
 ## License
 
