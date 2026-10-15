@@ -6,23 +6,21 @@
 
 > **Decentralized Tactical Edge Logistics and High-Altitude Stocking Intelligence**
 
-[![React](https://img.shields.io/badge/React-19-black?logo=react)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9-black?logo=typescript)](https://www.typescriptlang.org)
-[![Vite](https://img.shields.io/badge/Vite-6.2-black?logo=vite)](https://vitejs.dev)
-[![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-v4-black?logo=tailwindcss)](https://tailwindcss.com)
+[![React](https://img.shields.io/badge/React-19-black?logo=react)](https://react.dev)
 [![Leaflet](https://img.shields.io/badge/Leaflet-GIS-black?logo=leaflet)](https://leafletjs.com)
+[![Federated Learning](https://img.shields.io/badge/Federated_Learning-Edge_AI-black)](https://github.com/ankitgpt18/Tandem)
+[![Python](https://img.shields.io/badge/Python-3.11-black?logo=python)](https://www.python.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-black)](https://opensource.org/licenses/MIT)
 
 Tandem is a decentralized tactical logistics and supply forecasting platform built for high-altitude mountain sectors along the Line of Actual Control (LAC) in Eastern Ladakh. It coordinates stock forecasting, mountain corridor pathfinding, and pass closure monitoring across forward operating bases without relying on central cloud servers or external API keys.
 
 ## Tech Stack
 
-- **Frontend & UI:** React 19, TypeScript, Vite, Tailwind CSS v4, Lucide Icons
-- **Tactical GIS & Mapping:** Leaflet, React-Leaflet, NASA SRTM 30m DEM elevation profiles
-- **Analytics & Charting:** Recharts, sub-zero fuel burn curves, DRDO DFRL nutrition models
-- **Federated Learning:** Clustered FL, Adaptive Renyi DP-SGD, SecAgg+, Top-k sparsification, Byzantine filtering
-- **Corridor Routing:** Geodesic mountain pathfinding, winding factor calibration, UAV aerial lanes
-- **Edge Security & Protocols:** EMCON radio silence mode, local SQLite buffering, zero-cloud architecture
+- **Frontend & GIS:** React 19, TypeScript, Vite, Tailwind CSS v4, Leaflet, Recharts, Lucide Icons
+- **Federated Edge Learning:** Clustered FL, Adaptive Renyi DP-SGD, SecAgg+ zero-knowledge masking, Top-k sparsification, Byzantine filtering
+- **Telemetry & Standards:** NASA SRTM 30m DEM elevation profiles, DRDO DFRL nutrition baselines, sub-zero fuel burn curves
+- **Routing:** Geodesic mountain corridor optimization with winding factor calibration and heavy-lift logistics drone corridors
 
 ## Key Features
 
