@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#121620" />
+      <stop offset="100%" stop-color="#080a0e" />
+    </linearGradient>
+
+    <!-- Subtle Border Gradient -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d3849" />
+      <stop offset="100%" stop-color="#151b24" />
+    </linearGradient>
+
+    <!-- Cyan Arm Gradient -->
+    <linearGradient id="cyanArm" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00d2f0" />
+      <stop offset="100%" stop-color="#0096c7" />
+    </linearGradient>
+
+    <!-- Green Arm Gradient -->
+    <linearGradient id="greenArm" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00e676" />
+      <stop offset="100%" stop-color="#00a859" />
+    </linearGradient>
+
+    <!-- White Top Arm Gradient -->
+    <linearGradient id="whiteArm" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#cfd8dc" />
+      <stop offset="100%" stop-color="#ffffff" />
+    </linearGradient>
+
+    <!-- Central Outer Glow -->
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Squircle Base Card -->
+  <rect x="16" y="16" width="480" height="480" rx="115" ry="115" fill="url(#bgGrad)" stroke="url(#borderGrad)" stroke-width="6" />
+
+  <!-- Connecting Arms with smooth curvature -->
+  <!-- Left Cyan Arm -->
+  <path d="M 256 256 Q 196 300 120 360" fill="none" stroke="url(#cyanArm)" stroke-width="46" stroke-linecap="round" />
+
+  <!-- Right Green Arm -->
+  <path d="M 256 256 Q 316 300 392 360" fill="none" stroke="url(#greenArm)" stroke-width="46" stroke-linecap="round" />
+
+  <!-- Top Vertical White Arm -->
+  <path d="M 256 256 L 256 112" fill="none" stroke="url(#whiteArm)" stroke-width="46" stroke-linecap="round" />
+
+  <!-- Branch Nodes (Terminal Circles) -->
+  <!-- Top White Node -->
+  <circle cx="256" cy="112" r="34" fill="#ffffff" filter="url(#softGlow)" />
+
+  <!-- Left Cyan Node -->
+  <circle cx="120" cy="360" r="34" fill="#00b4d8" filter="url(#softGlow)" />
+
+  <!-- Right Green Node -->
+  <circle cx="392" cy="360" r="34" fill="#10b981" filter="url(#softGlow)" />
+
+  <!-- Central Hub Outer Ring -->
+  <circle cx="256" cy="256" r="68" fill="#10141d" stroke="#253140" stroke-width="12" />
+
+  <!-- Central Diamond (Rotated Square) -->
+  <rect x="228" y="228" width="56" height="56" rx="9" ry="9" fill="#10b981" transform="rotate(45 256 256)" filter="url(#softGlow)" />
+</svg>
